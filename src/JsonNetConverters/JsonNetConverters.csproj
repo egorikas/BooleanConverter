@@ -2,6 +2,17 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard1.3</TargetFramework>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageId>BooleanConverter</PackageId>
+    <Authors>Egor Grishechko</Authors>
+    <Company></Company>
+    <Product />
+    <Description>Integer to Boolean converter for Json.NET</Description>
+    <Copyright>Copyright 2017 (c) Egor Grishechko</Copyright>
+    <PackageProjectUrl>https://github.com/egorikas/BooleanConverter</PackageProjectUrl>
+    <PackageReleaseNotes>First release</PackageReleaseNotes>
+    <PackageLicenseUrl>https://github.com/egorikas/BooleanConverter/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageTags>json converter bool boolean integer number int json.net</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
