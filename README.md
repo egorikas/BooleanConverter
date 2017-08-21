@@ -1,9 +1,13 @@
 # BooleanConverter
 [![Build status](https://ci.appveyor.com/api/projects/status/67obru497wcyxc6q?svg=true)](https://ci.appveyor.com/project/EgorGrishechko/booleanconverter)
+[![NuGet](https://img.shields.io/nuget/v/BooleanConverter.svg)](https://www.nuget.org/packages/BooleanConverter)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 Integer to Boolean converter for Json.NET
 
+## Installation
+
+`Install-Package BooleanConverter`
 
 ## Usage
 
@@ -22,13 +26,13 @@ namespace UsageExample
         public void SerializeHappyPath()
         {
             //Arrange
-            var apiJson = "{ Field : 0}";
+            var apiJson = "{ Field : 1}";
 
             //Act
             var result = JsonConvert.DeserializeObject<ApiData>(apiJson);
 
             //Assert
-            Assert.Equal(expectedResult, result.Field);
+            Assert.Equal(true, result.Field);
         }
     }
 }
