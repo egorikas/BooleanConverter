@@ -4,12 +4,12 @@ using Xunit;
 
 namespace JsonNetConvertersTest
 {
-
     public class TestData
     {
         [JsonConverter(typeof(BooleanConverter))]
         public bool Field { get; set; }
     }
+
     public class IntegrationTest
     {
         [Theory]
